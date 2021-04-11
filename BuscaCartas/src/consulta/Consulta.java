@@ -13,7 +13,7 @@ public class Consulta {
 
 	private static Consulta consulta;
 
-	private String urlBase = "https://www.multiversogamecafe.com/";
+	private String urlBase = "https://www.redjogos.com.br";
 
 	private String parametros = "?view=ecom%2Fitens&page=1&id=181711&txt_order=1&txt_limit=20&txt_estoque=1&btFiltrar=Filtrar&busca=";
 
@@ -44,12 +44,12 @@ public class Consulta {
 			if (!fullInput.contains("Nenhum item encontrado com os filtros utilizados")) {
 				System.out.println("Carta: '" + carta + "' encontrada > Link ->" + urlCompleta);
 			} else {
-				System.out.println(carta + " não encontrada");
+				System.out.println(carta + " nï¿½o encontrada");
 			}
 		} catch (MalformedURLException e) {
-			System.out.println(carta + " não encontrada. Erro " + Erros.URL_EXCEPTION);
+			System.out.println(carta + " nï¿½o encontrada. Erro " + Erros.URL_EXCEPTION);
 		} catch (IOException e) {
-			System.out.println(carta + " não encontrada. Erro " + Erros.IO_EXCEPTION);
+			System.out.println(carta + " nï¿½o encontrada. Erro " + Erros.IO_EXCEPTION);
 		}		
 	}
 	
